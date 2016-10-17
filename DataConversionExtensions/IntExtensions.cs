@@ -2,7 +2,7 @@
 
 namespace Codenesium.DataConversionExtensions
 {
-    public static class IntExtentions
+    public static class IntExtensions
     {
         /// <summary>
         /// Downcast decimal to int

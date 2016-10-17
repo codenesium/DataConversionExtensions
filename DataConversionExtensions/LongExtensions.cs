@@ -2,7 +2,7 @@
 
 namespace Codenesium.DataConversionExtensions
 {
-    public static class LongExtentions
+    public static class LongExtensions
     {
         public static long ToLong(this int obj)
         {

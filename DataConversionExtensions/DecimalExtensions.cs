@@ -2,7 +2,7 @@
 
 namespace Codenesium.DataConversionExtensions
 {
-    public static class DecimalExtentions
+    public static class DecimalExtensions
     {
         public static decimal ToDecimal(this decimal obj)
         {

@@ -2,7 +2,7 @@
 using NUnit.Framework;
 using Codenesium.DataConversionExtensions;
 
-namespace DataConversionExtentionsTests
+namespace DataConversionExtensionsTests
 {
     [TestFixture]
     public class ToIntTests

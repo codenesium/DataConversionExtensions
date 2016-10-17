@@ -46,9 +46,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DateExtensions.cs" />
-    <Compile Include="DecimalExtentions.cs" />
+    <Compile Include="DecimalExtensions.cs" />
     <Compile Include="LongExtensions.cs" />
-    <Compile Include="IntExtentions.cs" />
+    <Compile Include="IntExtensions.cs" />
     <Compile Include="ObjectExtensions.cs" />
     <Compile Include="BooleanExtensions.cs" />
     <Compile Include="StringExtensions.cs" />
