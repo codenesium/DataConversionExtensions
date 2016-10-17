@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Codenesium.DataConversionExtensions</id>
+    <version>1.0-Beta</version>
+    <title>DataConversionExtensions</title>
+    <description>none</description>
+    <authors>Codenesium LLC</authors>
+    <owners>Codenesium LLC</owners>
+    <copyright>Copyright 2016</copyright>
+  </metadata>
+  	<files>
+		<file src="bin\$configuration$\*.dll" target="lib\net461\" />
+	    <file src="bin\$configuration$\*.config" target="lib\net461\" />
+	    <file src="bin\$configuration$\*.xml" target="lib\net461\" />
+	    <file src="bin\$configuration$\*.exe" target="lib\net461\" />
+	</files>
+</package>
