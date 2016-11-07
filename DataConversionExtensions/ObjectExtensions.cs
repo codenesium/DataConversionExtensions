@@ -67,5 +67,25 @@ namespace Codenesium.DataConversionExtensions
         {
             return JsonConvert.SerializeObject(obj, Formatting.Indented);
         }
+
+        public static bool IsEmptyOrZeroOrNull(this object obj)
+        {
+            if (obj == null)
+            {
+                return true;
+            }
+            else
+            {
+                string parsed = obj.ToString();
+                if (parsed == String.Empty || parsed == "0" || parsed == "0.0")
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+        }
     }
 }
