@@ -5,6 +5,36 @@ namespace Codenesium.DataConversionExtensions
     public static class IntExtensions
     {
         /// <summary>
+        /// Upcast short to int
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        public static int ToInt(this short obj)
+        {
+            return Convert.ToInt32(obj);
+        }
+
+        /// <summary>
+        /// Cast Byte array to int
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        public static int ToInt(this byte[] obj)
+        {
+            return BitConverter.ToInt32(obj, 0);
+        }
+
+        /// <summary>
+        /// Cast byte to int
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        public static int ToInt(this byte obj)
+        {
+            return Convert.ToInt32(obj);
+        }
+
+        /// <summary>
         /// Downcast decimal to int
         /// </summary>
         /// <param name="obj"></param>
