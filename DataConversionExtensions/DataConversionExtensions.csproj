@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="DateExtensions.cs" />
     <Compile Include="DecimalExtensions.cs" />
+    <Compile Include="GuidExtensions.cs" />
     <Compile Include="LongExtensions.cs" />
     <Compile Include="IntExtensions.cs" />
     <Compile Include="ObjectExtensions.cs" />
