@@ -59,7 +59,7 @@ namespace Codenesium.DataConversionExtensions
             else
             {
                 DateTime result = DateTime.MinValue;
-                if (DateTime.TryParseExact(obj, "MM/dd/yyyy HH:mm:ss.fff", CultureInfo.InvariantCulture, DateTimeStyles.None, out result))
+                if (DateTime.TryParse(obj, out result))
                 {
                     return result;
                 }
