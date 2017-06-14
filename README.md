@@ -30,4 +30,4 @@ var aString = "NaN";
 int? result = aString.ToNullableInt(); //result will be null
 ```
 
-This same strategy is applied to int, decimal, long, guid, boolean datetime etc.
+This same strategy is applied to int, decimal, long, guid, boolean,datetime etc.
