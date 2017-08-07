@@ -117,6 +117,7 @@ namespace Codenesium.DataConversionExtensions
             return obj;
         }
 
+
         public static int ToInt(this string obj)
         {
             return ToNullableInt(obj) ?? 0;
@@ -140,6 +141,11 @@ namespace Codenesium.DataConversionExtensions
                     return null;
                 }
             }
+        }
+
+        public static int ToInt(this object obj)
+        {
+            return ToInt(obj.ToString());
         }
     }
 }

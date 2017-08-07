@@ -45,5 +45,10 @@ namespace Codenesium.DataConversionExtensions
                 }
             }
         }
+
+        public static decimal ToDecimal(this object obj)
+        {
+            return ToDecimal(obj.ToString());
+        }
     }
 }
