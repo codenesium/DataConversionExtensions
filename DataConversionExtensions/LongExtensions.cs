@@ -16,7 +16,14 @@ namespace Codenesium.DataConversionExtensions
 
         public static long ToNullableLong(this object obj)
         {
-            return ToLong(obj.ToString());
+			if(obj == null)
+			{
+				return 0;
+			}
+			else
+			{
+				return ToLong(obj.ToString());
+			}
         }
 
 
