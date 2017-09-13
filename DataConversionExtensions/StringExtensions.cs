@@ -19,5 +19,10 @@ namespace Codenesium.DataConversionExtensions
                 return false;
             }
         }
+
+        public static string GetValueOrDefault(this string obj)
+        {
+            return obj == null ? string.Empty : obj;
+        }
     }
 }
