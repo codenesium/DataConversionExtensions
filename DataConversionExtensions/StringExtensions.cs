@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Globalization;
+using System.Linq;
 using System.Text;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -32,7 +33,7 @@ namespace Codenesium.DataConversionExtensions
             {
                 throw new ArgumentException($"Null or empty string cannot be converted");
             }
-            else if(obj.Length == 1 && char.IsDigit(obj[0]))
+            else if (obj.All(c => char.IsDigit(c)))
             {
                 return obj;
             }
@@ -73,7 +74,7 @@ namespace Codenesium.DataConversionExtensions
             {
                 throw new ArgumentException($"Null or empty string cannot be converted");
             }
-            else if (obj.Length == 1 && char.IsDigit(obj[0]))
+            else if (obj.All(c => char.IsDigit(c)))
             {
                 return obj;
             }

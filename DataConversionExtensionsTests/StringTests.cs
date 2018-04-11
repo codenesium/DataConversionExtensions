@@ -50,9 +50,17 @@ namespace Codenesium.DataConversionExtensionsTests
         [Test]
         public void ToUpperCaseFirstLetterSingleDigit()
         {
-            var value = "6";
+            var value = "9";
             var result = value.ToUpperCaseFirstLetter();
-            Assert.IsTrue(result == "6");
+            Assert.IsTrue(result == "9");
+        }
+
+        [Test]
+        public void ToUpperCaseFirstLetterOnlyDigits()
+        {
+            var value = "911";
+            var result = value.ToUpperCaseFirstLetter();
+            Assert.IsTrue(result == "911");
         }
 
 
@@ -70,6 +78,14 @@ namespace Codenesium.DataConversionExtensionsTests
             var value = "T";
             var result = value.ToLowerCaseFirstLetter();
             Assert.IsTrue(result == "t");
+        }
+
+        [Test]
+        public void ToLowerCaseFirstLetterONlyDigits()
+        {
+            var value = "911";
+            var result = value.ToLowerCaseFirstLetter();
+            Assert.IsTrue(result == "911");
         }
 
         [Test]
