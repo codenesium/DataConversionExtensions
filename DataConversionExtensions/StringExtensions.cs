@@ -32,6 +32,10 @@ namespace Codenesium.DataConversionExtensions
             {
                 throw new ArgumentException($"Null or empty string cannot be converted");
             }
+            else if(obj.Length == 1 && char.IsDigit(obj[0]))
+            {
+                return obj;
+            }
             else
             {
                 StringBuilder sb = new StringBuilder(obj);
@@ -68,6 +72,10 @@ namespace Codenesium.DataConversionExtensions
             if (String.IsNullOrEmpty(obj))
             {
                 throw new ArgumentException($"Null or empty string cannot be converted");
+            }
+            else if (obj.Length == 1 && char.IsDigit(obj[0]))
+            {
+                return obj;
             }
             else
             {

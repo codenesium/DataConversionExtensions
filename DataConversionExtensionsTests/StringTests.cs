@@ -31,6 +31,30 @@ namespace Codenesium.DataConversionExtensionsTests
             }
         }
 
+        [Test]
+        public void ToUpperCaseFirstLetterStringStartsWithDigit()
+        {
+            var value = "619test";
+            var result = value.ToUpperCaseFirstLetter();
+            Assert.IsTrue(result == "619Test");
+        }
+
+        [Test]
+        public void ToUpperCaseFirstLetterSingleLetter()
+        {
+            var value = "t";
+            var result = value.ToUpperCaseFirstLetter();
+            Assert.IsTrue(result == "T");
+        }
+
+        [Test]
+        public void ToUpperCaseFirstLetterSingleDigit()
+        {
+            var value = "6";
+            var result = value.ToUpperCaseFirstLetter();
+            Assert.IsTrue(result == "6");
+        }
+
 
         [Test]
         public void ToLowerCaseFirstLetter()
@@ -38,6 +62,32 @@ namespace Codenesium.DataConversionExtensionsTests
             var value = "Testing";
             var result = value.ToLowerCaseFirstLetter();
             Assert.IsTrue(result == "testing");
+        }
+
+        [Test]
+        public void ToLowerCaseFirstLetterSingleLetter()
+        {
+            var value = "T";
+            var result = value.ToLowerCaseFirstLetter();
+            Assert.IsTrue(result == "t");
+        }
+
+        [Test]
+        public void ToLowerCaseFirstLetterSingleDigit()
+        {
+            var value = "6";
+            var result = value.ToLowerCaseFirstLetter();
+            Assert.IsTrue(result == "6");
+        }
+
+
+
+        [Test]
+        public void ToLowerCaseFirstLetterStringStartsWithDigit()
+        {
+            var value = "123Test";
+            var result = value.ToLowerCaseFirstLetter();
+            Assert.IsTrue(result == "123test");
         }
 
         [Test]
@@ -61,6 +111,15 @@ namespace Codenesium.DataConversionExtensionsTests
             var value = "test9";
             var result = value.IndexOfFirstLetter();
             Assert.IsTrue(result == 0);
+
+        }
+
+        [Test]
+        public void ToIndexOfFirstLetterFirstLetterIsNumber()
+        {
+            var value = "213";
+            var result = value.IndexOfFirstLetter();
+            Assert.IsTrue(result == -1);
 
         }
 
@@ -126,14 +185,14 @@ namespace Codenesium.DataConversionExtensionsTests
             Assert.IsTrue(result == "test");
         }
 
-        [Test]
+   /*     [Test]
         public void RemoveLeadingSlash3()
         {
             var value = "\best";
             var result = value.RemoveLeadingSlash();
             Assert.IsTrue(result == "best");
         }
-
+        */
 
     }
 }

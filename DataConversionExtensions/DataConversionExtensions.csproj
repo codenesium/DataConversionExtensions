@@ -53,6 +53,7 @@
     <Compile Include="IntExtensions.cs" />
     <Compile Include="ObjectExtensions.cs" />
     <Compile Include="BooleanExtensions.cs" />
+    <Compile Include="ShortExtentions.cs" />
     <Compile Include="StringExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
