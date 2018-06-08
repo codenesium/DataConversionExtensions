@@ -22,5 +22,16 @@ namespace Codenesium.DataConversionExtensions
             response.Content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
             return response;
         }
+		
+	    public static string GetHeaderValue(this HttpResponseMessage message,string key)
+        {
+            IEnumerable<string> values;
+            string value = string.Empty;
+            if (message.Headers.TryGetValues(key, out values))
+            {
+                value = values.FirstOrDefault();
+            }
+            return value;
+        }
     }
 }
