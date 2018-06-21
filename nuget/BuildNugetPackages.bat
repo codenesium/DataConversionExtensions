@@ -1,2 +1,2 @@
-dotnet pack "../DataConversionExtensions.AspNetCore/DataConversionExtensions.AspNetCore.csproj" /p:NuspecFile="../DataConversionExtensions.AspNetCore/DataConversionExtensions.AspNetCore.nuspec" -c Release  -o  ../../NugetPackages
+dotnet pack "../DataConversionExtensions/DataConversionExtensions.csproj" /p:NuspecFile="../DataConversionExtensions/DataConversionExtensions.nuspec" -c Release  -o  ../../NugetPackages
 pause
