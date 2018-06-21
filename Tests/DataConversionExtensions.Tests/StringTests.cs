@@ -25,7 +25,7 @@ namespace Codenesium.DataConversionExtensionsTests
                 var result = value.ToUpperCaseFirstLetter();
                 Assert.Fail();
             }
-            catch(ArgumentException)
+            catch (ArgumentException)
             {
                 Assert.Pass();
             }
@@ -193,7 +193,7 @@ namespace Codenesium.DataConversionExtensionsTests
 
         }
 
-          [Test]
+        [Test]
         public void RemoveLeadingSlash2()
         {
             var value = @"\test";
@@ -201,14 +201,14 @@ namespace Codenesium.DataConversionExtensionsTests
             Assert.IsTrue(result == "test");
         }
 
-   /*     [Test]
-        public void RemoveLeadingSlash3()
-        {
-            var value = "\best";
-            var result = value.RemoveLeadingSlash();
-            Assert.IsTrue(result == "best");
-        }
-        */
+        /*     [Test]
+             public void RemoveLeadingSlash3()
+             {
+                 var value = "\best";
+                 var result = value.RemoveLeadingSlash();
+                 Assert.IsTrue(result == "best");
+             }
+             */
 
     }
 }

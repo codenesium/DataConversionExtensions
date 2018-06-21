@@ -1,7 +1,7 @@
 ﻿using System;
 
 namespace Codenesium.DataConversionExtensions
-{ 
+{
     public static class ShortExtensions
     {
         /// <summary>
@@ -32,6 +32,6 @@ namespace Codenesium.DataConversionExtensions
             }
         }
 
-
+    
     }
 }

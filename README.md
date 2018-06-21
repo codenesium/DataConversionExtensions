@@ -3,8 +3,10 @@
 ## C# library of extension methods for converting data 
 
 ```
-Install-Package Codenesium.DataConversionExtensions
+Install-Package Codenesium.DataConversionExtensions.AspNetCore
 ```
+
+Supports netcoreapp2.1, netstandard2.0, net451
 
 
 To convert a string and return a 0 if it's can't be converted into an int.
