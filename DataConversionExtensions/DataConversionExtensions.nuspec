@@ -2,16 +2,16 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata >
     <id>Codenesium.DataConversionExtensions</id>
-    <version>2018.1.5</version>
+    <version>2019.1.1</version>
     <title>DataConversionExtensions</title>
     <description>Libary of data conversion extension methods</description>
     <authors>Codenesium LLC</authors>
     <owners>Codenesium LLC</owners>
-    <copyright>Copyright 2018</copyright>
+    <copyright>Copyright 2019</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>ssssss
     <releaseNotes></releaseNotes>
-	  <licenseUrl>https://github.com/codenesium/DataConversionExtensions.AspNetCore/blob/master/License.txt</licenseUrl>
-    <projectUrl>https://github.com/codenesium/DataConversionExtensions.AspNetCore</projectUrl>
+	  <licenseUrl>https://github.com/codenesium/DataConversionExtensions/blob/master/License.txt</licenseUrl>
+    <projectUrl>https://github.com/codenesium/DataConversionExtensions</projectUrl>
     <tags>.NET Core c# data conversion</tags>
 	  <dependencies>
         <dependency id="Newtonsoft.Json" version="9.0.1" />

@@ -2,36 +2,61 @@
 
 namespace Codenesium.DataConversionExtensions
 {
-    public static class ShortExtensions
-    {
-        /// <summary>
-        /// Convert short to short. This method is useless except where
-        /// we do data conversion in generaiton.
-        /// </summary>
-        /// <param name="obj"></param>
-        /// <returns></returns>
-        public static short ToSmallInt(this short obj)
-        {
-            return Convert.ToInt16(obj);
-        }
+	public static class ShortExtensions
+	{
+		public static short ToShort(this short obj)
+		{
+			return obj;
+		}
 
-        /// <summary>
-        /// Cast nullable short to short
-        /// </summary>
-        /// <param name="obj"></param>
-        /// <returns></returns>
-        public static Nullable<short> ToSmallInt(this Nullable<short> obj)
-        {
-            if (obj == null)
-            {
-                return null;
-            }
-            else
-            {
-                return Convert.ToInt16(obj);
-            }
-        }
+		public static long ToNullableShort(this object obj)
+		{
+			if (obj == null)
+			{
+				return 0;
+			}
+			else
+			{
+				return ToShort(obj.ToString());
+			}
+		}
 
-    
-    }
+
+		public static Nullable<long> ToShort(this Nullable<short> obj)
+		{
+			if (obj == null)
+			{
+				return null;
+			}
+			else
+			{
+				return Convert.ToInt16(obj);
+			}
+		}
+
+		public static long ToShort(this string obj)
+		{
+			return ToNullableShort(obj) ?? 0;
+		}
+
+		public static Nullable<long> ToNullableShort(this string obj)
+		{
+			if (obj == null)
+			{
+				return null;
+			}
+			else
+			{
+				short result = 0;
+				if (short.TryParse(obj, out result))
+				{
+					return result;
+				}
+				else
+				{
+					return null;
+				}
+			}
+		}
+	}
 }
