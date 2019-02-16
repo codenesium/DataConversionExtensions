@@ -3,7 +3,7 @@ using System.Globalization;
 
 namespace Codenesium.DataConversionExtensions
 {
-    public static class DateExtensions
+    public static class DateTimeExtensions
     {
         public static string ToCompleteDateString(this DateTime obj)
         {

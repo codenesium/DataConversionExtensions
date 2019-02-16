@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations;
 namespace Codenesium.DataConversionExtensionsTests
 {
     [TestFixture]
-    public class DateTimeTest
+    public class ToDateTimeTest
     {
         [Test]
         public void ToCompleteDateString()
@@ -38,7 +38,6 @@ namespace Codenesium.DataConversionExtensionsTests
         [Test]
         public void ToNullableDateTime_empty()
         {
-            DateTime date = DateTime.Parse("2016-03-01");
             Assert.IsNull(("").ToNullableDateTime());
         }
     }
