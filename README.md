@@ -6,7 +6,7 @@
 Install-Package Codenesium.DataConversionExtensions.AspNetCore
 ```
 
-Supports netcoreapp2.2, netstandard2.0, net451
+[![NuGet Badge](https://buildstats.info/nuget/Codenesium.DataConversionExtensions)](https://www.nuget.org/packages/Codenesium.DataConversionExtensions/)
 
 
 To convert a string and return a 0 if it's can't be converted into an int.
