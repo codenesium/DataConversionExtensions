@@ -12,12 +12,12 @@ Install-Package Codenesium.DataConversionExtensions.AspNetCore
 To convert a string and return a 0 if it's can't be converted into an int.
 ```
 var aString = "123";
-int result = Convert.ToInt32(aString); //result will be 123
+int result = aString.ToInt(); //result will be 123
 ```
 
 ```
 var aString = "NaN";
-int result = Convert.ToInt32(aString); //result will be 0
+int result = aString.ToInt(); //result will be 0
 ```
 
 
